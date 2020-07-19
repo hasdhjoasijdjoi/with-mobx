@@ -4,6 +4,10 @@ import { observer, inject } from "mobx-react";
 @inject("store")
 @observer
 class Counter extends Component {
+  componentWillMount() {
+    console.log("hi");
+  }
+
   render() {
     const { store } = this.props;
     return (
